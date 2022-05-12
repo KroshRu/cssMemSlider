@@ -1,0 +1,58 @@
+.slider{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.picture{
+    width:30%
+}
+
+.text{
+    width: 40%;
+}
+.wrapper{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.page {
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: pink;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+  }
+.page:active {
+    background: green;
+  }
+.page:hover {
+    cursor: pointer;
+  }
+
+
+  @media (max-width: 1200px) {
+    .picture{
+        width:40%
+    }
+  }
+
+
+  @media (max-width: 796px) {
+    .picture{
+        width:50%
+    }
+    .wrapper{
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .text{
+        text-align: center;
+        width: 80%;
+    }
+  }
