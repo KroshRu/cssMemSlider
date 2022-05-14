@@ -5,6 +5,14 @@
     align-items: center;
 }
 
+body{
+    overflow: hidden;
+}
+
+.empty{
+    height: 100vh;
+}
+
 .picture{
     width:30%
 }
