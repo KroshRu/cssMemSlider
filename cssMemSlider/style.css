@@ -8,6 +8,7 @@
     margin-left: auto;
 }
 
+
 body{
     overflow: hidden;
 }
@@ -18,7 +19,19 @@ body{
 
 .picture{
     width: 35vw;
+    animation-duration: 1s;
+    animation-name: picture;
 }
+
+@keyframes picture {
+    from {
+      width: 120%;
+    }
+  
+    to {
+      width: 100%;
+    }
+  }
 
 .text{
     width: 18vw;
