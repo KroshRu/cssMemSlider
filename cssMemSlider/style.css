@@ -4,11 +4,13 @@
     align-content: center;
     align-items: center;
     width: 35vw;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 32.5vw;
+    margin-left: 32.5vw;
 	position: absolute;
     opacity: 0;
 	z-index: 0;
+    transform: scale(1.5);
+    transition: transform ease-in-out .5s, opacity ease-in-out .5s;
 }
 
 #radio1:checked ~ #pict1,
@@ -17,6 +19,7 @@
 #radio4:checked ~ #pict4{
 	opacity: 1;
 	z-index: 1;
+    transform: scale(1);
 }
 
 input {
@@ -47,12 +50,12 @@ body{
 }
 label {
     display: inline-flex;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1rem;
+    height: 1rem;
     background: pink;
     text-decoration: none;
     border-radius: 50%;
-    margin: 0 0 0.5rem 0;
+    margin-left: 1rem;
     position: relative;
   }
 
