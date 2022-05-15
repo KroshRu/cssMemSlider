@@ -6,6 +6,21 @@
     width: 35vw;
     margin-right: auto;
     margin-left: auto;
+	position: absolute;
+    opacity: 0;
+	z-index: 0;
+}
+
+#radio1:checked ~ #pict1,
+#radio2:checked ~ #pict2,
+#radio3:checked ~ #pict3,
+#radio4:checked ~ #pict4{
+	opacity: 1;
+	z-index: 1;
+}
+
+input {
+	display: none;
 }
 
 
@@ -13,25 +28,12 @@ body{
     overflow: hidden;
 }
 
-.empty{
-    height: 100vh;
-}
+
 
 .picture{
     width: 35vw;
-    animation-duration: 1s;
-    animation-name: picture;
+   
 }
-
-@keyframes picture {
-    from {
-      width: 120%;
-    }
-  
-    to {
-      width: 100%;
-    }
-  }
 
 .text{
     width: 18vw;
@@ -43,7 +45,7 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.page {
+label {
     display: inline-flex;
     width: 1.5rem;
     height: 1.5rem;
@@ -53,12 +55,18 @@ body{
     margin: 0 0 0.5rem 0;
     position: relative;
   }
-.page:active {
-    background: green;
-  }
-.page:hover {
+
+label:hover {
     cursor: pointer;
+    background: cyan;
   }
+
+#radio1:checked ~ label:nth-of-type(1),
+#radio2:checked ~ label:nth-of-type(2),
+#radio3:checked ~ label:nth-of-type(3),
+#radio4:checked ~ label:nth-of-type(4) {
+    background: cyan;
+}
 
 
 
