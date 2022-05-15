@@ -31,11 +31,8 @@ body{
     overflow: hidden;
 }
 
-
-
 .picture{
     width: 35vw;
-   
 }
 
 .text{
@@ -72,10 +69,6 @@ label:hover {
 #radio4:checked ~ .slider label:nth-of-type(4) {
     background: cyan;
 }
-
-
-
-
 
   @media (max-width: 796px) {
     .picture{
