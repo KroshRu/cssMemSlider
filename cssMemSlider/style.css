@@ -31,11 +31,8 @@ body{
     overflow: hidden;
 }
 
-
-
 .picture{
     width: 35vw;
-   
 }
 
 .text{
@@ -43,7 +40,7 @@ body{
     margin-right: 2vw;
 }
 .wrapper{
-    margin-top: 30px;
+    margin-top: 1vh;
     width: 35vw;
     display: flex;
     justify-content: space-between;
@@ -63,7 +60,10 @@ label:hover {
     cursor: pointer;
     background: cyan;
   }
-
+  label:active {
+    
+    background: black;
+  }
 
 
 #radio1:checked ~ .slider label:nth-of-type(1),
@@ -72,10 +72,6 @@ label:hover {
 #radio4:checked ~ .slider label:nth-of-type(4) {
     background: cyan;
 }
-
-
-
-
 
   @media (max-width: 796px) {
     .picture{
